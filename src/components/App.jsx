@@ -37,7 +37,6 @@ class App extends React.Component {
         <SearchBar onSearchSubmit={this.onSearchSubmit} ojire="holaish" />
         <ImageList images={this.state.images} />
         {/* <EdibleSticker /> */}
-        {/* {el.firstChild}; */}
 
         <div />
       </div>
