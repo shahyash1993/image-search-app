@@ -11,13 +11,10 @@ const ImageList = props => {
   const images = props.images.map(image => {
     return <ImageCard key={image.id} image={image} />;
 
-    //   <div key={image.id}>
-    {
-      /* when there was destructuring. */
-    }
-    {
-      /* <img src={urls.small} alt={description} /> */
-    }
+    //    <div key={image.id}>
+    //  when there was destructuring.
+
+    //  <img src={urls.small} alt={description} />
     // <ImageCard image={image} />
     //   </div>
   });

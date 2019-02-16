@@ -15,10 +15,12 @@ class App extends React.Component {
   //async-await is used instead of .then()
   //Alternative could be: Axios.get(___).then(promises => {console.log(promises.json())})
   //async onSearchSubmit(searchText) {
-  onSearchSubmit = async searchText => {
+  onSearchSubmit = async (searchText, pageNumber) => {
     console.log(">>", searchText);
     const response = await Unsplash.get("/search/photos", {
       params: {
+        page: { pageNumber },
+        per_page: 100,
         query: { searchText }
       }
     }); //end Axios.get

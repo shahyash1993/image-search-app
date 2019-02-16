@@ -2,7 +2,8 @@ import React from "react";
 
 class SearchBar extends React.Component {
   state = {
-    searchText: "care"
+    searchText: "biologyi",
+    pageNumber: 1
   };
 
   //on+<name of the element>+<event> => on+input+change
@@ -21,7 +22,7 @@ class SearchBar extends React.Component {
 
     //API request
     //works
-    this.props.onSearchSubmit(ev.target.value);
+    this.props.onSearchSubmit(ev.target.value, this.state.pageNumber);
 
     //doesn't work
     //this.props.onSearchSubmit(this.state.searchText);
@@ -29,7 +30,7 @@ class SearchBar extends React.Component {
 
   onFormSubmit = ev => {
     ev.preventDefault();
-    this.props.onSearchSubmit(this.state.searchText);
+    //this.props.onSearchSubmit(this.state.searchText);
     //    console.log(this.state.searchText);
   };
 
