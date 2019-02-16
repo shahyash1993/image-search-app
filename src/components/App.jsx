@@ -1,6 +1,7 @@
 //all the third party libraries imports.
 import React from "react";
 import Unsplash from "../api/Unsplash.jsx";
+import EdibleSticker from "./EdibleSticker.jsx";
 
 //all the project file imports.
 import SearchBar from "./SearchBar.jsx";
@@ -13,7 +14,6 @@ class App extends React.Component {
 
   //async-await is used instead of .then()
   //Alternative could be: Axios.get(___).then(promises => {console.log(promises.json())})
-
   //async onSearchSubmit(searchText) {
   onSearchSubmit = async searchText => {
     console.log(">>", searchText);
@@ -36,6 +36,10 @@ class App extends React.Component {
       <div className="ui container" style={{ marginTop: "100px" }}>
         <SearchBar onSearchSubmit={this.onSearchSubmit} ojire="holaish" />
         <ImageList images={this.state.images} />
+        {/* <EdibleSticker /> */}
+        {/* {el.firstChild}; */}
+
+        <div />
       </div>
     );
   }
