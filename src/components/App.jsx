@@ -1,4 +1,4 @@
-//all the third party libraries imports.
+//All of all the third party libraries imports.
 import React from "react";
 import Unsplash from "../api/Unsplash.jsx";
 import EdibleSticker from "./EdibleSticker.jsx";
