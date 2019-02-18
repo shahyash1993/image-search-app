@@ -36,7 +36,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "100px" }}>
-        <SearchBar onSearchSubmit={this.onSearchSubmit} ojire="holaish" />
+        <SearchBar onSearchSubmit={this.onSearchSubmit} ojire="holaishza" />
         <ImageList images={this.state.images} />
         {/* <EdibleSticker /> */}
 
